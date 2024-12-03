@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Nova Tarefa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Nova Tarefa</h1>
+
+    <form action="/tarefas" method="post">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" required="required" th:value="${tarefa.titulo}" placeholder="Digite o título da tarefa" />
+
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao" th:text="${tarefa.descricao}" placeholder="Digite a descrição da tarefa"></textarea>
+
+        <label for="concluida">Concluída</label>
+        <input type="checkbox" id="concluida" name="concluida" th:checked="${tarefa.concluida}" />
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="/tarefas" class="btn">Voltar</a>
+</body>
+</html>
