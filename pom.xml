@@ -13,7 +13,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.3</version> <!-- Versão do Spring Boot -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
     <dependencies>
@@ -31,11 +31,18 @@
             <version>2.7.3</version> <!-- Versão do Starter Thymeleaf -->
         </dependency>
 
+        <!-- Dependência do Spring Boot Validation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <version>2.7.3</version> <!-- Versão do Starter Validation -->
+        </dependency>
+
         <!-- Dependência do Spring Boot Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter JPA -->
+            <version>2.7.3</version> <!-- Versão do Starter Data JPA -->
         </dependency>
 
         <!-- Dependência do banco de dados H2 -->
