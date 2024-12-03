@@ -12,44 +12,39 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.3</version> <!-- Versão do Spring Boot -->
-        <relativePath/>
+        <version>2.7.3</version> <!-- A versão do Spring Boot -->
+        <relativePath/> <!-- O caminho para o POM do pai -->
     </parent>
 
     <dependencies>
-        <!-- Dependência do Spring Boot Web -->
+        <!-- Dependência do Spring Boot Web (sem versão explícita) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter Web -->
         </dependency>
 
-        <!-- Dependência do Spring Boot Thymeleaf -->
+        <!-- Dependência do Spring Boot Thymeleaf (sem versão explícita) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter Thymeleaf -->
         </dependency>
 
-        <!-- Dependência do Spring Boot Validation -->
+        <!-- Dependência do Spring Boot Validation (sem versão explícita) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter Validation -->
         </dependency>
 
-        <!-- Dependência do Spring Boot Data JPA -->
+        <!-- Dependência do Spring Boot Data JPA (sem versão explícita) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter Data JPA -->
         </dependency>
 
-        <!-- Dependência do banco de dados H2 -->
+        <!-- Dependência do banco de dados H2 (sem versão explícita) -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.1.214</version> <!-- Versão do H2 -->
             <scope>runtime</scope>
         </dependency>
 
@@ -57,7 +52,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.7.3</version> <!-- Versão do Starter Test -->
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -68,7 +62,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.3</version> <!-- Versão do Plugin Spring Boot -->
             </plugin>
         </plugins>
     </build>
