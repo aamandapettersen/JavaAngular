@@ -1,2 +1,2 @@
 # JavaAngular
-Projeto JavaAngular
+Gerenciador de Tarefas
