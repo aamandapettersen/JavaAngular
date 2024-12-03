@@ -9,43 +9,40 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>todolist</name>
-    <description>Projeto de gerenciamento de tarefas</description>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.7</version> <!-- Versão do Spring Boot -->
-        <relativePath/> <!--lookup parent from repository-->
+        <version>2.7.3</version> <!-- Versão do Spring Boot -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <dependencies>
-        <!-- Spring Boot Starter Web (para criar a API e o frontend com Thymeleaf) -->
+        <!-- Dependência do Spring Boot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.7</version> <!-- Defina a versão do Spring Boot -->
+            <version>2.7.3</version> <!-- Versão do Starter Web -->
         </dependency>
 
-        <!-- Spring Boot Starter Thymeleaf (para templates HTML) -->
+        <!-- Dependência do Spring Boot Thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-            <version>2.7.7</version> <!-- Defina a versão do Spring Boot -->
+            <version>2.7.3</version> <!-- Versão do Starter Thymeleaf -->
         </dependency>
 
-        <!-- Spring Boot Starter Data JPA (para trabalhar com banco de dados relacional) -->
+        <!-- Dependência do Spring Boot Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.7.7</version> <!-- Versão do Spring Boot -->
+            <version>2.7.3</version> <!-- Versão do Starter JPA -->
         </dependency>
 
-        <!-- H2 Database (banco de dados em memória) -->
+        <!-- Dependência do banco de dados H2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.1.214</version> <!-- Defina a versão do H2 -->
+            <version>2.1.214</version> <!-- Versão do H2 -->
             <scope>runtime</scope>
         </dependency>
 
@@ -53,21 +50,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.7.7</version> <!-- Versão do Spring Boot -->
+            <version>2.7.3</version> <!-- Versão do Starter Test -->
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Plugin do Spring Boot para execução da aplicação -->
+            <!-- Plugin do Spring Boot para construção e execução do projeto -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.7</version> <!-- Versão do Spring Boot -->
+                <version>2.7.3</version> <!-- Versão do Plugin Spring Boot -->
             </plugin>
         </plugins>
     </build>
-
 </project>
